@@ -1,0 +1,160 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "userAddress",
+				"type": "address"
+			},
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "key",
+				"type": "string"
+			}
+		],
+		"name": "addUser",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "websiteAddress",
+				"type": "address"
+			},
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "key",
+				"type": "string"
+			}
+		],
+		"name": "addWebsite",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "websiteAddress",
+				"type": "address"
+			},
+			{
+				"name": "userAddress",
+				"type": "address"
+			}
+		],
+		"name": "addWhitelist",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "websiteAddress",
+				"type": "address"
+			},
+			{
+				"name": "userAddress",
+				"type": "address"
+			}
+		],
+		"name": "requestTransfer",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "websiteAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "userAddress",
+				"type": "address"
+			}
+		],
+		"name": "AskDocument",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "userAddress",
+				"type": "address"
+			}
+		],
+		"name": "checkUserRegistration",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "websiteAddress",
+				"type": "address"
+			}
+		],
+		"name": "checkWebsiteRegistration",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "websiteAddress",
+				"type": "address"
+			},
+			{
+				"name": "userAddress",
+				"type": "address"
+			}
+		],
+		"name": "checkWhitelisted",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
